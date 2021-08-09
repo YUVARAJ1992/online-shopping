@@ -1,0 +1,183 @@
+<!-- <div>
+    <div class="header">
+       <div class="manu-icon"></div>
+       <div class="logo"></div>
+       <div class="search-far"></div>
+       <div class="app-icon"></div>
+       <div class="login"></div>
+    </div>
+    <div class="wrapper">
+        <div class="sidebar">
+            <div class="menu-item"></div>
+            <div class="menu-item"></div>
+            <div class="menu-item"></div>
+            <div class="menu-item"></div>
+            <div class="menu-item"></div>
+            <div class="menu-item"></div>
+            <div class="menu-item"></div>
+            <div class="menu-item"></div>
+            <div class="menu-item"></div>
+            <div class="menu-item"></div>
+            <div class="menu-item"></div>
+            <div class="menu-item"></div>
+            <div class="menu-item"></div>
+            <div class="menu-item"></div>
+            <div class="menu-item"></div>
+            <div class="menu-item"></div>
+            <div class="menu-item"></div>
+            <div class="menu-item"></div>
+            <div class="menu-item"></div>
+            <div class="menu-item"></div>
+            <div class="menu-item"></div>
+            <div class="menu-item"></div>
+            <div class="menu-item"></div>
+            <div class="menu-item"></div>            
+        </div>
+        <div class="content">
+            <div class="content-item">
+                <div class="content-item1">
+                    <h4>{{news1.title}}</h4>
+                    <p>{{news1.para}}</p>
+                    <ul>
+                    <li>{{news1.content1}}</li>
+                    <li>{{news1.content2}}</li>
+                </ul>
+                </div>
+                <div class="content-img1">
+                    <img class="img" src="assets\c-i-2.jpg">
+                </div>
+            </div>
+            <div class="content-item">
+                <div class="content-item1">
+                    <h4>{{news1.title}}</h4>
+                    <p>{{news1.para}}</p>
+                    <ul>
+                    <li>{{news1.content1}}</li>
+                    <li>{{news1.content2}}</li>
+                </ul>
+                </div>
+                <div class="content-item2">
+                    <img src="">
+                </div>
+            </div>
+            <div class="content-item">
+                <div class="content-item1">
+                    <h4>{{news1.title}}</h4>
+                    <p>{{news1.para}}</p>
+                    <ul>
+                    <li>{{news1.content1}}</li>
+                    <li>{{news1.content2}}</li>
+                </ul>
+                </div>
+                <div class="content-item2">
+                    <img src="">
+                </div>
+            </div>
+            <div class="content-item">
+                <div class="content-item1">
+                    <h4>{{news1.title}}</h4>
+                    <p>{{news1.para}}</p>
+                    <ul>
+                    <li>{{news1.content1}}</li>
+                    <li>{{news1.content2}}</li>
+                </ul>
+                </div>
+                <div class="content-item2">
+                    <img src="">
+                </div>
+            </div>
+            <div class="content-item">
+                <div class="content-item1">
+                    <h4>{{news1.title}}</h4>
+                    <p>{{news1.para}}</p>
+                    <ul>
+                    <li>{{news1.content1}}</li>
+                    <li>{{news1.content2}}</li>
+                </ul>
+                </div>
+                <div class="content-item2">
+                    <img src="">
+                </div>
+            </div>
+            <div class="content-item">
+                <div class="content-item1">
+                    <h4>{{news1.title}}</h4>
+                    <p>{{news1.para}}</p>
+                    <ul>
+                    <li>{{news1.content1}}</li>
+                    <li>{{news1.content2}}</li>
+                </ul>
+                </div>
+                <div class="content-item2">
+                    <img src="">
+                </div>
+            </div>
+            <div class="content-item"></div>
+            <div class="content-item"></div>
+            <div class="content-item"></div>
+            <div class="content-item"></div>
+            <div class="content-item"></div>
+            <div class="content-item"></div>
+            <div class="content-item"></div>
+            <div class="content-item"></div>
+            <div class="content-item"></div>
+            <div class="content-item"></div>
+            <div class="content-item"></div>
+            <div class="content-item"></div>
+            <div class="content-item"></div>
+            <div class="content-item"></div>
+            <div class="content-item"></div>
+            <div class="content-item"></div>
+            <div class="content-item"></div>
+            <div class="content-item"></div>
+            <div class="content-item"></div>
+        </div>
+
+    </div>
+</div> -->
+
+
+<!-- <p>login works!</p>
+<br>
+<button [routerLink]="['/home']">Click to navigate Home Page</button>
+<br>
+<br>
+<button [routerLink]="['/register']">Click to navigate register Page</button>
+<br>
+<br>
+<button (click)="clickToHomePage()">Click to Navigate Home Page</button>
+<br><br>
+<button (click)="clickToRegisterPage()">Clcik to Naviage Register Page</button> -->
+
+
+<div>
+    <label>Enter your Email ID:</label>
+    <input type ="email" placeholder="Please Enter your Mail ID" [(ngModel)]="login.email">
+</div>
+<div>
+    <label>Enter Your Password:</label>
+    <input type="password" placeholder="Please Enter Your Password" [(ngModel)]="login.password">
+</div>
+<button (click)="onClickLogin()">LOG IN</button>
+<br>
+<p>email : {{login.email}}</p>
+<p>password : {{login.password}}</p>
+<br>
+<div>
+    <label>Enter Your Name :</label>
+    <input type="text" placeholder="Enter Your Name Here" [(ngModel)]="user.name">
+    <br>
+    <br>
+    <label>Enter Your Job Designation :</label>
+    <input type="text" placeholder="Enter Your Job Here" [(ngModel)]="user.job">
+</div>
+<div>
+    <button (click)="onClickUser()">Click</button>
+</div>
+<p>name : {{user.name}}</p>
+<p>job : {{user.job}}</p>
+<br>
+<button (click)="onDeleteUser()">Click to Delete</button>
+
+
+
